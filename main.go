@@ -48,7 +48,7 @@ func postBrainees(c *gin.Context) {
 func main() {
 	router := gin.Default()
 	router.GET("/brainees", getBrainees)
-	router.GET("/brainees/:id", getBraineesByID)
+	router.GET("/brainees/:braineeId", getBraineesByID)
 	router.POST("brainees", postBrainees)
 
 	router.Run("localhost:8080")
